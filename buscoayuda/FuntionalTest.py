@@ -38,7 +38,7 @@ class FunctionalTest(TestCase):
         correo.send_keys('jd.patino1@uniandes.edu.co')
         self.browser.implicitly_wait(3)
         nombreUsuario = self.browser.find_element_by_id('id_username')
-        nombreUsuario.send_keys('jediondo')
+        nombreUsuario.send_keys('jediondo54335')
         self.browser.implicitly_wait(3)
         clave = self.browser.find_element_by_id('id_password')
         clave.send_keys('clave123')
@@ -54,7 +54,7 @@ class FunctionalTest(TestCase):
         self.browser.get('http://localhost:8000')
         span = self.browser.find_element(By.XPATH, '//span[text()="Juan Daniel Arevalo"]')
         span.click()
-
+        self.browser.implicitly_wait(3)
         h2 = self.browser.find_element(By.XPATH, '//h2[text()="Juan Daniel Arevalo"]')
-
+        self.browser.implicitly_wait(3)
         self.assertIn('Juan Daniel Arevalo', h2.text)
