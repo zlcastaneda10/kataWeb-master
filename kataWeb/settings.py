@@ -79,8 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'buscoayuda',
-            'USER': 'Willy',
-            'PASSWORD': '123'
+            'USER': 'postgres',
+            'PASSWORD': 'root'
 
     }
 }
@@ -105,7 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+LOGIN_REDIRECT_URL = '/'
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
