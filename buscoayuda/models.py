@@ -11,8 +11,8 @@ class TiposDeServicio(models.Model):
     nombre = models.CharField(max_length=1000)
     imagen = models.ImageField(upload_to='services')
 
-    def __unicode__(self):
-        return u'{0}'.format(self.nombre)
+    def __str__(self):
+        return self.nombre
 
 
 class Trabajador(models.Model):
@@ -22,7 +22,7 @@ class Trabajador(models.Model):
     tiposDeServicio = models.ForeignKey(TiposDeServicio, null=True, on_delete=models.CASCADE)
     telefono = models.CharField(max_length=1000)
     correo = models.CharField(max_length=1000)
-    imagen = models.ImageField(upload_to='photos')
+    #imagen = models.ImageField(upload_to='images',null=True)
     usuarioId = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
 
 
@@ -60,7 +60,7 @@ class TrabajadorForm(ModelForm):
 
     class Meta:
         model = Trabajador
-        fields = ['nombre', 'apellidos', 'aniosExperiencia', 'tiposDeServicio', 'telefono', 'correo', 'imagen']
+        fields = ['nombre', 'apellidos', 'aniosExperiencia', 'tiposDeServicio', 'telefono', 'correo']
 
 
 class UserForm(ModelForm):
