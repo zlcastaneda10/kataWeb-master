@@ -24,10 +24,10 @@ class FunctionalTest(TestCase):
         nombre = self.browser.find_element_by_id('id_nombre')
         nombre.send_keys('Juan Daniel')
 
-        apellidos = self.browser.find_element_by_id('id_apellidos')
+        """        apellidos = self.browser.find_element_by_id('id_apellidos')
         apellidos.send_keys('Arevalo')
 
-"""        experiencia = self.browser.find_element_by_id('id_aniosExperiencia')
+        experiencia = self.browser.find_element_by_id('id_aniosExperiencia')
         experiencia.send_keys('5')
 
         self.browser.find_element_by_xpath(
