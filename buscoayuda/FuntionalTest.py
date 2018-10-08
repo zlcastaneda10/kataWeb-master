@@ -7,7 +7,7 @@ import sys
 class FunctionalTest(TestCase):
     def setUp(self):
         #self.browser = webdriver.Chrome('C:/chromedriver.exe')
-        self.browser = webdriver.Chrome('C://chromedriver.exe')
+        self.browser = webdriver.Chrome('/Users/ChrisMartin/PycharmProjects/demokatatdd_django-002/chromedriver')
 
     def tearDown(self):
         self.browser.quit()
