@@ -323,3 +323,7 @@ pip-selfcheck.json
 
 
 # End of https://www.gitignore.io/api/pycharm,python,django
+
+
+#Custom
+kataWeb/settings.py

@@ -27,7 +27,7 @@ class FunctionalTest(TestCase):
         apellidos = self.browser.find_element_by_id('id_apellidos')
         apellidos.send_keys('Arevalo')
 
-        experiencia = self.browser.find_element_by_id('id_aniosExperiencia')
+"""        experiencia = self.browser.find_element_by_id('id_aniosExperiencia')
         experiencia.send_keys('5')
 
         self.browser.find_element_by_xpath(
@@ -39,7 +39,7 @@ class FunctionalTest(TestCase):
         correo.send_keys('jd.patino1@uniandes.edu.co')
 
         imagen = self.browser.find_element_by_id('id_imagen')
-        imagen.send_keys('C:\\Users\\asistente\\Desktop\\developer.jpg')
+        imagen.send_keys('/Users/ChrisMartin/PycharmProjects/demokatatdd_django-002/images/developer.jpg')
 
         nombreUsuario = self.browser.find_element_by_id('id_username')
         nombreUsuario.send_keys('juan645')
@@ -53,4 +53,4 @@ class FunctionalTest(TestCase):
         span = self.browser.find_element(By.XPATH, '//span[text()="Juan Daniel Arevalo"]')
 
         self.assertIn('Juan Daniel Arevalo', span.text)
-
+"""
